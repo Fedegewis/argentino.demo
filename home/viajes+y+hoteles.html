@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Viajes y hoteles</title>
+        <link rel="preconnect" href="https://i.argentino.com.ar"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="canonical" href="https://www.argentino.com.ar"/>
+        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos.css?313">
+        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos2.css?313">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://i.argentino.com.ar/config_argentino_www/favicon.png">
+        <style>
+            .tope2 {
+                width: 100%;
+                height: 50px;
+                border-bottom: 1px solid #d4d4d4
+            }
+
+            .tope2_contenedor {
+                display: flex;
+                align-items: center;
+                max-width: 999px;
+                height: 50px;
+                margin: 0 auto
+            }
+
+            .tope2_logo img {
+                height: 40px;
+                width: auto;
+                padding-left: 10px
+            }
+
+            #tope2_buscar {
+                width: 100%
+            }
+
+            #tope2_buscar form {
+                position: relative;
+                width: 250px;
+                margin-left: 30px;
+                font-family: roboto,arial,helvetica,sans-serif;
+                font-size: 14px
+            }
+
+            #tope2_buscar svg {
+                position: absolute;
+                top: 6px;
+                left: 8px;
+                width: 24px;
+                height: 24px;
+                fill: #666666
+            }
+
+            #buscar_tope {
+                box-sizing: border-box;
+                width: 100%;
+                font-family: roboto,arial,helvetica,sans-serif;
+                font-size: 14px;
+                height: 35px;
+                line-height: 35px;
+                padding: 5px 10px 5px 33px;
+                color: #666;
+                margin: 0;
+                vertical-align: middle;
+                background-color: #f0f0f0;
+                border: 1px solid #f0f0f0;
+                border-radius: 20px;
+                opacity: 1;
+                outline: 0;
+                transition: border .16s ease-out
+            }
+
+            #buscar_tope:focus {
+                border: 1px solid #00aeef;
+                box-shadow: 0 0 0 1px #00aeef
+            }
+
+            #buscar_tope:focus::-webkit-input-placeholder,#buscar_tope:focus::placeholder {
+                color: transparent
+            }
+
+            .tope2_micuenta {
+                margin-left: 20px;
+                font-size: 11px;
+                white-space: nowrap
+            }
+
+            .tope2_micuenta svg {
+                vertical-align: -8px;
+                width: 24px;
+                height: 24px
+            }
+
+            .tope2_publicar {
+                margin-left: 20px;
+                margin-right: 10px
+            }
+
+            .tope2_publicar .botonpublicar {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-family: roboto,arial,helvetica,sans-serif;
+                font-size: 14px;
+                height: 30px;
+                line-height: initial;
+                font-weight: 600;
+                margin: 0;
+                padding-left: 16px;
+                padding-right: 16px;
+                color: #fff;
+                background-color: #333;
+                border-radius: 20px;
+                border-width: 0;
+                cursor: pointer;
+                outline: 0;
+                white-space: nowrap
+            }
+
+            .tope2_publicar .botonpublicar span {
+                font-size: 21px;
+                line-height: 24px
+            }
+
+            a.botonpublicar:active,a.botonpublicar:hover,a.botonpublicar:link,a.botonpublicar:visited {
+                text-decoration: none
+            }
+
+            @media (max-width: 767.98px) {
+                .tope2 {
+                    position:fixed;
+                    top: 0;
+                    z-index: 1000;
+                    background-color: #fff;
+                    transition: all .3s ease
+                }
+
+                .tope2.hide {
+                    top: -102px
+                }
+
+                .tope2_logo {
+                    width: 100%
+                }
+
+                .tope2_logo img {
+                    height: 33px
+                }
+
+                #tope2_buscar {
+                    position: absolute;
+                    top: 50px;
+                    box-sizing: border-box;
+                    display: block;
+                    background-color: #fff;
+                    padding: 0 10px 10px 10px;
+                    border-bottom: 1px solid #d4d4d4
+                }
+
+                #tope2_buscar form {
+                    width: 100%;
+                    margin-left: 0
+                }
+
+                #tope2_buscar svg {
+                    top: 8px
+                }
+
+                .tope2_micuenta {
+                    margin-left: 5px
+                }
+
+                .tope2_micuenta .person {
+                    vertical-align: unset
+                }
+
+                .tope2_micuenta a span {
+                    display: none
+                }
+
+                .tope2_publicar {
+                    margin-left: 5px
+                }
+
+                .tope2_publicar .botonpublicar {
+                    padding-left: 12px;
+                    padding-right: 12px
+                }
+
+                #buscar_tope {
+                    font-size: 16px;
+                    height: 40px;
+                    line-height: 40px
+                }
+            }
+
+            .jumbotron-wrapper {
+                width: 100%;
+                background-color: #f0f0f0;
+                margin-bottom: 30px
+            }
+
+            .jumbotron {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+                max-width: 800px;
+                margin: auto;
+                padding: 20px
+            }
+
+            .jumbotron h1 {
+                margin: 0 0 15px 0
+            }
+
+            .jumbotron p {
+                line-height: 22px;
+                margin: 0
+            }
+
+            .jumbotron a {
+                margin-top: 15px
+            }
+
+            .jumbotron img {
+                border-radius: 4px
+            }
+
+            @media (max-width: 767.98px) {
+                .jumbotron-wrapper {
+                    margin-top:101px
+                }
+
+                .jumbotron {
+                    flex-direction: column
+                }
+
+                .jumbotron a {
+                    box-sizing: border-box;
+                    width: 100%
+                }
+
+                .jumbotron img {
+                    width: 100%;
+                    height: unset
+                }
+            }
+
+            .iconos_frases_inicio {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 10px 10px 0 10px;
+                font: 11px Roboto,Arial,Helvetica,sans-serif
+            }
+
+            .iconos_frases_inicio .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 16.66%;
+                height: 100px
+            }
+
+            .iconos_frases_inicio .item a {
+                display: block
+            }
+
+            .iconos_frases_inicio .item a:first-of-type {
+                width: 32px;
+                height: 32px;
+                padding: 10px;
+                margin-bottom: 7px;
+                border-radius: 50%
+            }
+
+            .iconos_frases_inicio .item svg {
+                width: 32px;
+                height: 32px;
+                fill: #333333
+            }
+
+            @media (max-width: 850px) {
+                .iconos_frases_inicio .item {
+                    width:25%
+                }
+            }
+
+            @media (max-width: 700px) {
+                .iconos_frases_inicio .item {
+                    width:33.33%
+                }
+            }
+
+            @media (max-width: 320px) {
+                .iconos_frases_inicio .item {
+                    width:50%
+                }
+            }
+
+            .frases_links_home ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                list-style: none
+            }
+
+            .frases_links_home ul li {
+                width: 25%;
+                min-height: 36px
+            }
+
+            @media (max-width: 767.98px) {
+                .frases_links_home {
+                    margin:0 10px
+                }
+
+                .frases_links_home ul li {
+                    width: 50%
+                }
+            }
+        </style>
+    </head>
+    <body class="argentino">
+        <div class="tope2" id="tope2">
+            <div class="tope2_contenedor">
+                <div class="tope2_logo">
+                    <a href="/argentino.demo/">
+                        <img srcset="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 132w, https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 160w" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2" alt="Argentino.com.ar - avisos clasificados de Argentina" width="132" height="33">
+                    </a>
+                </div>
+                <div id="tope2_buscar">
+                    <form method="post" action="buscar.asp" class="formulario">
+                        <input name="u" type="hidden" value="argentina">
+                        <input name="d" type="hidden" value="">
+                        <input name="b" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
+                        <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
+                            <svg alt="search">
+                                <use xlink:href="imagenes/sprite.svg?3#search"></use>
+                            </svg>
+                        </a>
+                    </form>
+                </div>
+                <div class="tope2_micuenta">
+                    <a href="private/login?utm_source=landing&utm_medium=none&utm_campaign=login" rel="nofollow" title="Mi cuenta">
+                        <svg>
+                            <use xlink:href="imagenes/sprite.svg?3#person"></use>
+                        </svg>
+                        <span>Mi cuenta</span>
+                    </a>
+                </div>
+                <div class="tope2_publicar">
+                    <a href="post-ad?utm_source=other&utm_medium=form&utm_campaign=postad" class="botonpublicar">
+                        <span>+</span>
+                        Publicar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            !function() {
+                function e() {
+                    l = o.scrollY || n.scrollTop,
+                    s < l ? t = 2 : l < s && (t = 1),
+                    t !== c && function(e, l) {
+                        if (e === 2 && l > 101) {
+                            i.classList.add("hide");
+                            c = e
+                        } else if (e === 1) {
+                            i.classList.remove("hide");
+                            c = e
+                        }
+                    }(t, l),
+                    s = l
+                }
+                var l, n = document.documentElement, o = window, s = o.scrollY || n.scrollTop, t = 0, c = 0, i = document.getElementById("tope2");
+                null != i && screen.width < 768 && window.addEventListener("scroll", e, {
+                    passive: !0
+                })
+            }();
+        </script>
+        <div id="contenido" style="margin-top: 0px;">
+            <div class="home_taxonomia">
+                <h1>Viajes y hoteles</h1>
+                <ul>
+                    <li class="foto">
+                        <a href="argentina/agencias+de+viajes" title="Agencias de viajes en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/agencias-de-viajes.jpg" width="100" height="75" alt="Agencias de viajes en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/agencias+de+viajes" title="Agencias de viajes en Argentina">Agencias de viajes</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/albergues" title="Albergues en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/hosteles.jpg" width="100" height="75" alt="Albergues en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/albergues" title="Albergues en Argentina">Albergues</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/albergues+transitorios" title="Albergues transitorios en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/hoteles-alojamiento.jpg" width="100" height="75" alt="Albergues transitorios en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/albergues+transitorios" title="Albergues transitorios en Argentina">Albergues transitorios</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/alojamiento" title="Alojamiento en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/alojamiento.jpg" width="100" height="75" alt="Alojamiento en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/alojamiento" title="Alojamiento en Argentina">Alojamiento</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/alojamiento+en+cabanas" title="Alojamiento en cabañas en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/alojamiento-en-cabanas.jpg" width="100" height="75" alt="Alojamiento en cabañas en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/alojamiento+en+cabanas" title="Alojamiento en cabañas en Argentina">Alojamiento en cabañas</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/alojamiento+rural" title="Alojamiento rural en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/alojamiento-rural.jpg" width="100" height="75" alt="Alojamiento rural en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/alojamiento+rural" title="Alojamiento rural en Argentina">Alojamiento rural</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/alquiler+de+vehiculos" title="Alquiler de vehículos en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/alquiler-de-vehiculos.jpg" width="100" height="75" alt="Alquiler de vehículos en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/alquiler+de+vehiculos" title="Alquiler de vehículos en Argentina">Alquiler de vehículos</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/apart+hoteles" title="Apart hoteles en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/alojamiento.jpg" width="100" height="75" alt="Apart hoteles en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/apart+hoteles" title="Apart hoteles en Argentina">Apart hoteles</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/campings" title="Campings en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/camping.jpg" width="100" height="75" alt="Campings en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/campings" title="Campings en Argentina">Campings</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/casas+rurales" title="Casas rurales en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/alojamiento-rural.jpg" width="100" height="75" alt="Casas rurales en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/casas+rurales" title="Casas rurales en Argentina">Casas rurales</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/hosterias" title="Hosterías en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/hosterias.jpg" width="100" height="75" alt="Hosterías en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/hosterias" title="Hosterías en Argentina">Hosterías</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/hoteles" title="Hoteles en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/hoteles.jpg" width="100" height="75" alt="Hoteles en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/hoteles" title="Hoteles en Argentina">Hoteles</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/moteles" title="Moteles en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/moteles.jpg" width="100" height="75" alt="Moteles en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/moteles" title="Moteles en Argentina">Moteles</a>
+                    </li>
+                    <li class="foto">
+                        <a href="argentina/transporte+de+pasajeros" title="Transporte de pasajeros en Argentina">
+                            <img src="https://i.argentino.com.ar/images/defaults/medios-de-transporte.jpg" width="100" height="75" alt="Transporte de pasajeros en Argentina" loading="lazy">
+                        </a>
+                        <a href="argentina/transporte+de+pasajeros" title="Transporte de pasajeros en Argentina">Transporte de pasajeros</a>
+                    </li>
+                </ul>
+                <ul style="margin-top:20px;">
+                    <li>
+                        <a href="argentina/actividades+turisticas" title="Actividades turísticas en Argentina">Actividades turísticas</a>
+                    </li>
+                    <li>
+                        <a href="argentina/alquiler+de+temporada" title="Alquiler de temporada en Argentina">Alquiler de temporada</a>
+                    </li>
+                    <li>
+                        <a href="argentina/equipaje" title="Equipaje en Argentina">Equipaje</a>
+                    </li>
+                    <li>
+                        <a href="argentina/hostales" title="Hostales en Argentina">Hostales</a>
+                    </li>
+                    <li>
+                        <a href="argentina/hotel+con+restaurante" title="Hotel con restaurante en Argentina">Hotel con restaurante</a>
+                    </li>
+                    <li>
+                        <a href="argentina/hotel+resort" title="Hotel resort en Argentina">Hotel resort</a>
+                    </li>
+                    <li>
+                        <a href="argentina/hoteles+boutique" title="Hoteles boutique en Argentina">Hoteles boutique</a>
+                    </li>
+                    <li>
+                        <a href="argentina/resorts" title="Resorts en Argentina">Resorts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconos_frases_inicio">
+                <div class="item">
+                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Argentina" style="background-color:#9BB9FF;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#alimentacion"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Argentina">Alimentación</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Argentina" style="background-color:#F8DD3C;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#bancos_seguros"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Argentina">Bancos y seguros</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Argentina" style="background-color:#23E5D8;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#belleza_estetica"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Argentina">Belleza y estética</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/compras" title="Compras en Argentina" style="background-color:#D2B982;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#compras"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/compras" title="Compras en Argentina">Compras</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/construccion" title="Construcción en Argentina" style="background-color:#8DF1EE;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#construccion"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/construccion" title="Construcción en Argentina">Construcción</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/deportes" title="Deportes en Argentina" style="background-color:#CDDCFF;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#deportes"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/deportes" title="Deportes en Argentina">Deportes</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/educacion" title="Educación en Argentina" style="background-color:#FF645C;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#educacion"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/educacion" title="Educación en Argentina">Educación</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Argentina" style="background-color:#FFE894;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#guia_gastronomica"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Argentina">Guía gastronómica</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Argentina" style="background-color:#9BB9FF;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#hogar_jardin"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Argentina">Hogar y jardín</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Argentina" style="background-color:#F8DD3C;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#inmobiliarias"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Argentina">Inmobiliarias</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Argentina" style="background-color:#23E5D8;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#mascotas"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Argentina">Mascotas</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/motor" title="Motor en Argentina" style="background-color:#D2B982;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#motor"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/motor" title="Motor en Argentina">Motor</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Argentina" style="background-color:#8DF1EE;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#profesionales"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Argentina">Profesionales</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Argentina" style="background-color:#CDDCFF;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#servicios_publicos"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Argentina">Servicios públicos</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Argentina" style="background-color:#FF645C;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#ocio_fiestas"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Argentina">Ocio y fiestas</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/salud" title="Salud en Argentina" style="background-color:#FFE894;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#salud"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/salud" title="Salud en Argentina">Salud</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/transportes" title="Transportes en Argentina" style="background-color:#9BB9FF;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#transportes"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/transportes" title="Transportes en Argentina">Transportes</a>
+                </div>
+                <div class="item">
+                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Argentina" style="background-color:#F8DD3C;">
+                        <svg>
+                            <use xlink:href="imagenes/taxonomia.svg?3#viajes_hoteles"></use>
+                        </svg>
+                    </a>
+                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Argentina">Viajes y hoteles</a>
+                </div>
+            </div>
+        </div>
+        <div id="pie">
+            <p>
+                <a href="about-us" rel="nofollow">Acerca de</a>
+                - <a href="faqs" rel="nofollow">Preguntas frecuentes</a>
+                - <a href="terms" rel="nofollow">Condiciones de uso</a>
+            </p>
+        </div>
+        <div id="token" data-token="7B4F5D0F6C7F1E114787525F1C0D514969C10B1A6D0417090116565201562570495530DD575F5B7F15146" style="display:none;"></div>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL113DLLF8"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-FL113DLLF8");
+        </script>
+        <script src="https://i.argentino.com.ar/js/funciones.js?49" defer></script>
+    </body>
+</html>
