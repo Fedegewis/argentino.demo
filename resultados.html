@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda</title>
+    <style>
+        /* Estilos CSS para mantener la consistencia con tu diseño */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        #contenido {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para el contenedor de resultados */
+        .gsc-results-wrapper-visible {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Estilos para cada resultado individual */
+        .gsc-webResult.gsc-result {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        /* Estilos para los títulos de los resultados */
+        .gs-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0066c0; /* Un azul de enlace estándar */
+        }
+
+        /* Estilos para los snippets (la descripción del resultado) */
+        .gs-snippet {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Estilos para las URLs */
+        .gsc-url-top, .gsc-url-bottom {
+            font-size: 0.8em;
+            color: #008000; /* Un verde para las URLs */
+        }
+
+        /* Ocultar elementos que no quieres mostrar */
+        .gsc-adBlock {
+            display: none !important; /* Oculta el bloque de anuncios si aparece */
+        }
+    </style>
+    <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
+</head>
+<body>
+    <div id="contenido">
+        <h1>Resultados de Búsqueda</h1>
+        <div class="gcse-searchresults-only"></div>
+    </div>
+</body>
+</html>
