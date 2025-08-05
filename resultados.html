@@ -40,62 +40,9 @@
             signalGooglefcPresent();
         })();
     </script>
-    
     <style>
-            /* Contenedor general de resultados */
-            .gsc-results-wrapper-visible,
-            .gsc-control-cse,
-            .gsc-control-wrapper-cse {
-                padding: 0 !important;
-                border: none !important;
-                background: transparent !important;
-                box-shadow: none !important;
-                margin: 0 !important;
-            }
-
-            /* Cada resultado individual */
-            .gsc-webResult,
-            .gsc-result,
-            .gs-webResult,
-            .gs-result {
-                border: none !important;
-                background: transparent !important;
-                padding: 0 !important;
-                margin: 0 0 10px 0 !important;
-                box-shadow: none !important;
-            }
-
-            /* Elimina márgenes internos de textos y títulos */
-            .gs-title,
-            .gs-snippet,
-            .gsc-url-top,
-            .gsc-table-cell-snippet-close {
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-
-            /* Oculta barra superior (ordenar, cantidad resultados, etc) */
-            .gsc-above-wrapper-area,
-            .gsc-orderby-container,
-            .gsc-tabHeader.gsc-tabhInactive,
-            .gsc-tabHeader.gsc-tabhActive {
-                display: none !important;
-            }
-
-            /* Elimina fondo del input de búsqueda (opcional si no querés que se repita) */
-            .gsc-input-box {
-                background: transparent !important;
-                border: none !important;
-            }
-
-            /* Asegura que el cuerpo tenga espacio 0 */
-            .gcse-searchresults-only,
-            body,
-            html {
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-             body,td,th {
+        /* Estilos generales de tu sitio */
+        body,td,th {
             font-family: roboto,arial,helvetica,sans-serif;
             font-size: 14px;
             color: #333;
@@ -103,7 +50,8 @@
         }
         body {
             background-color: #fff;
-            margin: 0
+            margin: 0;
+            padding: 0;
         }
         a:active,a:link,a:visited {
             color: #1935f9;
@@ -122,67 +70,198 @@
             height: 24px;
             fill: #333333
         }
+        /* Estilos para el encabezado */
+        .tope2 {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #d4d4d4
+        }
+        .tope2_contenedor {
+            display: flex;
+            align-items: center;
+            max-width: 999px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        .tope2_logo img {
+            height: 40px;
+            width: auto;
+        }
+        #tope2_buscar {
+            width: 100%;
+        }
+        #tope2_buscar form {
+            position: relative;
+            width: 250px;
+            margin-left: 30px;
+            font-family: roboto,arial,helvetica,sans-serif;
+            font-size: 14px;
+        }
+        #tope2_buscar svg {
+            position: absolute;
+            top: 6px;
+            left: 8px;
+            width: 24px;
+            height: 24px;
+            fill: #666666;
+        }
+        #buscar_tope {
+            box-sizing: border-box;
+            width: 100%;
+            font-family: roboto,arial,helvetica,sans-serif;
+            font-size: 14px;
+            height: 35px;
+            line-height: 35px;
+            padding: 5px 10px 5px 33px;
+            color: #666;
+            margin: 0;
+            vertical-align: middle;
+            background-color: #f0f0f0;
+            border: 1px solid #f0f0f0;
+            border-radius: 20px;
+            opacity: 1;
+            outline: 0;
+            transition: border .16s ease-out;
+        }
+        #buscar_tope:focus {
+            border: 1px solid #00aeef;
+            box-shadow: 0 0 0 1px #00aeef;
+        }
+        #buscar_tope:focus::-webkit-input-placeholder,
+        #buscar_tope:focus::placeholder {
+            color: transparent;
+        }
+        .tope2_micuenta {
+            margin-left: 20px;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+        .tope2_micuenta svg {
+            vertical-align: -8px;
+            width: 24px;
+            height: 24px;
+        }
+        .tope2_micuenta a span {
+            font-size: 11px;
+            line-height: normal;
+        }
+        .tope2_publicar {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        .tope2_publicar .botonpublicar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-family: roboto,arial,helvetica,sans-serif;
+            font-size: 14px;
+            height: 30px;
+            line-height: initial;
+            font-weight: 600;
+            margin: 0;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 20px;
+            border-width: 0;
+            cursor: pointer;
+            outline: 0;
+            white-space: nowrap;
+        }
+        .tope2_publicar .botonpublicar span {
+            font-size: 21px;
+            line-height: 24px;
+        }
+        a.botonpublicar:active,a.botonpublicar:hover,a.botonpublicar:link,a.botonpublicar:visited {
+            text-decoration: none;
+        }
+        @media (max-width: 767.98px) {
+            .tope2 {
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                background-color: #fff;
+                transition: all .3s ease;
+            }
+            .tope2.hide {
+                top: -102px;
+            }
+            .tope2_logo {
+                width: 100%;
+            }
+            .tope2_logo img {
+                height: 33px;
+            }
+            #tope2_buscar {
+                position: absolute;
+                top: 50px;
+                box-sizing: border-box;
+                display: block;
+                background-color: #fff;
+                padding: 0 10px 10px 10px;
+                border-bottom: 1px solid #d4d4d4;
+            }
+            #tope2_buscar form {
+                width: 100%;
+                margin-left: 0;
+            }
+            #tope2_buscar svg {
+                top: 8px;
+            }
+            .tope2_micuenta {
+                margin-left: 5px;
+            }
+            .tope2_micuenta a span {
+                display: none;
+            }
+            .tope2_publicar {
+                margin-left: 5px;
+            }
+            .tope2_publicar .botonpublicar {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            #buscar_tope {
+                font-size: 16px;
+                height: 40px;
+                line-height: 40px;
+            }
+            #contenido {
+                padding-top: 101px;
+            }
+        }
+        
+        /* Estilos para el contenedor de resultados de Google */
+        .gsc-results-wrapper-visible {
+            max-width: 999px;
+            margin: 20px auto;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        /* Oculta la barra superior de filtros y "Ordenar por" si no la necesitas */
+        .gsc-above-wrapper-area {
+            display: none !important;
+        }
+        
+        /* Estilos para el título de la página de resultados */
         h1 {
             font-size: 20px;
             font-weight: 700;
             color: #000;
-            margin: 0 0 10px 0
-        }
-        h2 {
-            font-size: 14px;
-            font-weight: 700;
-            color: #000;
-            margin-bottom: 1px
-        }
-        #contenido {
+            margin: 0 0 10px 0;
+            padding: 0 10px;
             max-width: 999px;
-            margin: 10px auto 15px auto
+            box-sizing: border-box;
         }
-        #contenido:after,#contenido:before {
-            content: "";
-            visibility: hidden;
-            display: block;
-            height: 0;
-            clear: both
+        @media (max-width: 767.98px) {
+            h1 {
+                padding: 0 10px;
+            }
         }
-        /* ... (resto de tus estilos CSS de aceites+vegetales.html) ... */
-        
-        /* Sobrescribe los estilos del contenedor principal de resultados */
-        .gsc-results-wrapper-visible {
-            padding: 0 !important;
-            border: none !important;
-            border-radius: 0 !important;
-            background-color: transparent !important;
-            box-shadow: none !important;
-            margin: 0 !important;
-        }
-        /* Elimina márgenes internos y fondos de resultados individuales */
-        .gsc-webResult, .gsc-result, .gs-webResult, .gs-result {
-            border: none !important;
-            background: transparent !important;
-            padding: 0 !important;
-            margin: 0 0 10px 0 !important;
-            box-shadow: none !important;
-        }
-
-        /* Elimina márgenes innecesarios en los títulos */
-        .gs-title, .gs-snippet {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        /* Oculta la barra superior de filtros y "Ordenar por" si no la querés */
-        .gsc-above-wrapper-area {
-            display: none !important;
-        }
-
-        /* Asegura que el contenedor principal no tenga espacios */
-        .gcse-searchresults-only {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-
     </style>
 </head>
 <body class="argentino">
@@ -220,6 +299,7 @@
         </div>
     </div>
     <script>
+        // Tu script para el header
         !function() {
             function e() {
                 l = o.scrollY || n.scrollTop, s < l ? t = 2 : l < s && (t = 1), t !== c && function(e, l) {
@@ -238,19 +318,10 @@
             })
         }();
     </script>
-    <div id="contenido">
-        <div id="contenidoizquierda">
-            <div class="listado">
-                <ul>
-                    <li class="noitemlistado">
-                        <div id="resultados_busqueda">
-                            <h1>Resultados de Búsqueda</h1>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="gcse-searchresults-only"></div>
-        </div>
+
+    <div style="max-width: 999px; margin: 20px auto; padding: 0 10px;">
+        <h1>Resultados de Búsqueda</h1>
+        <div class="gcse-searchresults-only"></div>
     </div>
 
 </body>
