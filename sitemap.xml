@@ -1,57 +1,58 @@
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>1.00</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/alimentacion.html</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/belleza+y+estetica</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/mascotas</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/motor</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/ocio+y+fiestas</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/profesionales</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/salud</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/transportes</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/home/viajes+y+hoteles</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.80</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://fedegewis.github.io/argentino.demo/mexico/aceites+vegetales</loc>
     <lastmod>2025-08-05T18:30:00+00:00</lastmod>
     <priority>0.64</priority>
-  </sitemap>
-</sitemapindex>
+  </url>
+</urlset>
