@@ -40,8 +40,62 @@
             signalGooglefcPresent();
         })();
     </script>
+    
     <style>
-        body,td,th {
+            /* Contenedor general de resultados */
+            .gsc-results-wrapper-visible,
+            .gsc-control-cse,
+            .gsc-control-wrapper-cse {
+                padding: 0 !important;
+                border: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                margin: 0 !important;
+            }
+
+            /* Cada resultado individual */
+            .gsc-webResult,
+            .gsc-result,
+            .gs-webResult,
+            .gs-result {
+                border: none !important;
+                background: transparent !important;
+                padding: 0 !important;
+                margin: 0 0 10px 0 !important;
+                box-shadow: none !important;
+            }
+
+            /* Elimina márgenes internos de textos y títulos */
+            .gs-title,
+            .gs-snippet,
+            .gsc-url-top,
+            .gsc-table-cell-snippet-close {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            /* Oculta barra superior (ordenar, cantidad resultados, etc) */
+            .gsc-above-wrapper-area,
+            .gsc-orderby-container,
+            .gsc-tabHeader.gsc-tabhInactive,
+            .gsc-tabHeader.gsc-tabhActive {
+                display: none !important;
+            }
+
+            /* Elimina fondo del input de búsqueda (opcional si no querés que se repita) */
+            .gsc-input-box {
+                background: transparent !important;
+                border: none !important;
+            }
+
+            /* Asegura que el cuerpo tenga espacio 0 */
+            .gcse-searchresults-only,
+            body,
+            html {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+             body,td,th {
             font-family: roboto,arial,helvetica,sans-serif;
             font-size: 14px;
             color: #333;
