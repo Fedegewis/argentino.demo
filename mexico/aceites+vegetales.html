@@ -2,126 +2,25 @@
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
-    <title>Aceites vegetales en México</title>
+    <title>Resultados de Búsqueda de Aceites</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resultados de búsqueda sobre aceites vegetales en México">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i.argentino.com.ar/config_argentino_www/favicon.png">
-
     <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
-    
     <style>
-        /* Estilos generales */
+        /* Estilos básicos para la prueba */
         body {
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            color: #333;
-            -webkit-font-smoothing: antialiased;
-            background-color: #fff;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
-
         h1 {
+            color: #333;
             font-size: 24px;
-            font-weight: 700;
-            color: #000;
-            margin: 20px 0;
-            padding: 0 10px;
-        }
-        
-        .resaltado {
-            background-color: #eef60f;
-            padding: 2px 5px;
-        }
-
-        /* Contenedor principal para el contenido */
-        .content-container {
-            max-width: 999px;
-            margin: 10px auto;
-            padding: 0 10px;
-        }
-
-        /* Estilos del encabezado */
-        .tope2 {
-            width: 100%;
-            height: 50px;
-            border-bottom: 1px solid #d4d4d4;
-        }
-        .tope2_contenedor {
-            display: flex;
-            align-items: center;
-            max-width: 999px;
-            height: 50px;
-            margin: 0 auto;
-            padding: 0 10px;
-        }
-        .tope2_logo img {
-            height: 40px;
-            width: auto;
-        }
-        #tope2_buscar form {
-            position: relative;
-            width: 250px;
-            margin-left: 30px;
-        }
-        #tope2_buscar svg {
-            position: absolute;
-            top: 6px;
-            left: 8px;
-            width: 24px;
-            height: 24px;
-            fill: #666666;
-        }
-        #buscar_tope {
-            box-sizing: border-box;
-            width: 100%;
-            height: 35px;
-            line-height: 35px;
-            padding: 5px 10px 5px 33px;
-            border-radius: 20px;
-        }
-
-        /* Estilos para ocultar la barra de filtros de Google */
-        .gsc-above-wrapper-area {
-            display: none !important;
+            margin-bottom: 20px;
         }
     </style>
 </head>
-<body class="argentino">
-    <div class="tope2" id="tope2">
-        <div class="tope2_contenedor">
-            <div class="tope2_logo">
-                <a href="/argentino.demo/">
-                    <img src="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2" alt="Logo">
-                </a>
-            </div>
-            <div id="tope2_buscar">
-                <form method="get" action="resultadosMexico.html" class="formulario">
-                    <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿Qué buscas?">
-                    <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
-                        <svg alt="search">
-                            <use xlink:href="imagenes/sprite.svg?3#search"></use>
-                        </svg>
-                    </a>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-    <div class="content-container">
-        <h1>
-            <span class="resaltado">Resultados de búsqueda</span> sobre Aceites Vegetales en México
-        </h1>
-        <!-- Resultados de búsqueda automáticos -->
-        <div class="gcse-searchresults-only" data-autoSearchOnLoad="true" data-query="aceites vegetales alimentos México"></div>
-    </div>
-
+<body>
+    <h1>Resultados de Búsqueda de Aceites</h1>
+    <div class="gcse-searchresults-only" data-autoSearchOnLoad="true" data-query="Aceites vegetales"></div>
 </body>
 </html>
-<script>
-    // Configuración de Google Custom Search
-    window.__gcse = {
-        parsetags: 'explicit',
-        searchType: 'searchresults-only',
-        queryParameterName: 'q'
-    };
