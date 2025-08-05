@@ -48,6 +48,45 @@
             -webkit-font-smoothing: antialiased
         }
 
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #fff;
+        }
+
+        /* Limpieza del contenedor de resultados */
+        .gcse-searchresults-only,
+        .gsc-control-cse,
+        .gsc-control-wrapper-cse {
+            padding: 0 !important;
+            border: none !important;
+            background: transparent !important;
+            box-shadow: none !important;
+            margin: 0 !important;
+        }
+
+        .gsc-webResult, .gsc-result, .gs-webResult, .gs-result {
+            border: none !important;
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 0 10px 0 !important;
+            box-shadow: none !important;
+        }
+
+        .gs-title, .gs-snippet {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Ocultar zonas innecesarias */
+        .gsc-above-wrapper-area,
+        .gsc-orderby-container,
+        .gsc-tabHeader.gsc-tabhInactive,
+        .gsc-tabHeader.gsc-tabhActive {
+            display: none !important;
+        }
+
         body {
             background-color: #fff;
             margin: 0
