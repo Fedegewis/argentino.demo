@@ -5,36 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados de Búsqueda</title>
     <style>
-        /* Estilos CSS para mantener la consistencia con tu diseño */
+        /* Estilos CSS para los elementos del cuerpo de la página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px; /* Agregado padding para evitar que los resultados se peguen a los bordes */
             background-color: #f7f7f7;
-        }
-
-        #contenido {
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Estilos para el contenedor de resultados */
-        .gsc-results-wrapper-visible {
-            padding: 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-
-        /* Estilos para cada resultado individual */
-        .gsc-webResult.gsc-result {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px dashed #ccc;
         }
 
         /* Estilos para los títulos de los resultados */
@@ -60,13 +36,14 @@
         .gsc-adBlock {
             display: none !important; /* Oculta el bloque de anuncios si aparece */
         }
+
+        /* Se eliminaron los estilos para .gsc-results-wrapper-visible y #contenido */
+        /* para que los resultados se muestren sin un cuadro de fondo o borde. */
     </style>
     <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
 </head>
 <body>
-    <div id="contenido">
-        <h1>Resultados de Búsqueda</h1>
-        <div class="gcse-searchresults-only"></div>
-    </div>
+    <h1>Resultados de Búsqueda</h1>
+    <div class="gcse-searchresults-only"></div>
 </body>
 </html>
