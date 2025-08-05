@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados de Búsqueda</title>
     <style>
-        /* Estilos CSS para los elementos del cuerpo de la página */
+        /* Estilos CSS para el cuerpo de la página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px; /* Agregado padding para evitar que los resultados se peguen a los bordes */
+            padding: 20px;
             background-color: #f7f7f7;
         }
 
@@ -17,7 +17,7 @@
         .gs-title {
             font-size: 1.2em;
             font-weight: bold;
-            color: #0066c0; /* Un azul de enlace estándar */
+            color: #0066c0;
         }
 
         /* Estilos para los snippets (la descripción del resultado) */
@@ -29,16 +29,22 @@
         /* Estilos para las URLs */
         .gsc-url-top, .gsc-url-bottom {
             font-size: 0.8em;
-            color: #008000; /* Un verde para las URLs */
+            color: #008000;
         }
 
-        /* Ocultar elementos que no quieres mostrar */
+        /* Oculta el bloque de anuncios si aparece */
         .gsc-adBlock {
-            display: none !important; /* Oculta el bloque de anuncios si aparece */
+            display: none !important;
         }
 
-        /* Se eliminaron los estilos para .gsc-results-wrapper-visible y #contenido */
-        /* para que los resultados se muestren sin un cuadro de fondo o borde. */
+        /* Si aún se ve un cuadro, podría ser por estos estilos. Asegúrate de que no existan en tu CSS */
+        .gsc-results-wrapper-visible {
+            padding: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
     </style>
     <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
 </head>
