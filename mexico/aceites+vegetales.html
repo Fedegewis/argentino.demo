@@ -1073,9 +1073,6 @@
                     <form method="get" action="resultadosMexico.html" class="formulario">
                         <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
                         <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
-                        <svg alt="search">
-                            <use xlink:href="imagenes/sprite.svg?3#search"></use>
-                        </svg>
                     </a>
                     </form>
             </div>
@@ -1127,8 +1124,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="gcse-searchresults-only" data-autoSearchOnLoad="true" data-query="Aceites vegetales"></div>
-        </div>
+            <div id="cse" class="gcse-searchresults-only"></div>
+            <script>
+            window.__gcse = {
+                callback: function() {
+                google.search.cse.element.getElement("cse").execute("Aceites vegetales");
+                }
+            };
+            </script>
+            <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
+            </div>
     </div>
 </body>
 </html>
