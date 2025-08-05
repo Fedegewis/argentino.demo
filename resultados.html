@@ -102,6 +102,32 @@
             box-shadow: none !important;
             margin: 0 !important;
         }
+        /* Elimina márgenes internos y fondos de resultados individuales */
+        .gsc-webResult, .gsc-result, .gs-webResult, .gs-result {
+            border: none !important;
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 0 10px 0 !important;
+            box-shadow: none !important;
+        }
+
+        /* Elimina márgenes innecesarios en los títulos */
+        .gs-title, .gs-snippet {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Oculta la barra superior de filtros y "Ordenar por" si no la querés */
+        .gsc-above-wrapper-area {
+            display: none !important;
+        }
+
+        /* Asegura que el contenedor principal no tenga espacios */
+        .gcse-searchresults-only {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
 
     </style>
 </head>
