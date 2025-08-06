@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <title>Aceites vegetales en Mexico</title>
+   <meta charset="UTF-8">
+    <title>Resultados de Búsqueda de Aceites</title>
     <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
-    <link rel="preconnect" href="https://fundingchoicesmessages.google.com" crossorigin="anonymous"/>
-    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin="anonymous"/>
-    <link rel="preconnect" href="https://www.google.com"/>
-    <meta name="description" content="Aceites vegetales en Mexico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="https://i.argentino.com.ar/css/estilos.css?313" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <script src="https://i.argentino.com.ar/js/funciones.js?49" defer></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i.argentino.com.ar/config_argentino_www/favicon.png">
-    <script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+    <meta name="description" content="Alimentos congelados en Mexico">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/funciones.js" defer></script>
+    <link rel="icon" type="image/png" href="../logo.country.png">
     <script>
         (function(g, o) {
             g[o] = g[o] || function() {
@@ -1070,10 +1066,8 @@
                 </a>
             </div>
             <div id="tope2_buscar">
-                <form method="post" action="buscar.asp" class="formulario">
-                    <input name="u" type="hidden" value="argentina">
-                    <input name="d" type="hidden" value="listado">
-                    <input name="b" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
+                <form method="get" action="resultadosMexico.html" class="formulario">
+                    <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
                     <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
                         <svg alt="search">
                             <use xlink:href="imagenes/sprite.svg?3#search"></use>
@@ -1090,8 +1084,9 @@
                 </a>
             </div>
             <div class="tope2_publicar">
-                <a href="post-ad?utm_source=list&utm_medium=form&utm_campaign=postad" class="botonpublicar">
-                    <span>+</span> Publicar
+                <a href="post-ad?utm_source=hometop&utm_medium=form&utm_campaign=postad" class="botonpublicar">
+                    <span>+</span>
+                    Publicar
                 </a>
             </div>
         </div>
@@ -1115,31 +1110,11 @@
             })
         }();
     </script>
-    <script async src="https://cse.google.com/cse.js?cx=12c5954916eaf44c8"></script>
-    <div style="border: 1px solid blue;">
-        Area 1 (for example a sidebar)
-        <div class="gcse-searchbox"></div>
-        <div class="gcse-searchresults" data-autoSearchOnLoad="true"></div>
+
+    <div style="max-width: 999px; margin: 20px auto; padding: 0 10px;">
+        <h1> Aceites vegetales en Mexico </h1>
+        <div class="gcse-searchresults-only" data-autoSearchOnLoad="true" data-query="Aceites vegetales alimento en Mexico"></div>
     </div>
-    <div style="border: 1px solid red;">
-        Area 2 (for example main area of the page)
-        <div class="gcse-searchresults"></div>
-        <div class="gcse-searchresults" data-autoSearchOnLoad="true"></div>
-    </div>
-    <div id="contenido">
-        <div id="contenidoizquierda">
-            <div class="listado">
-                <ul>
-                    <li class="noitemlistado">
-                        <div id="titulopagina" class="titulochico">
-                            <h1>
-                                <span class="resaltado">Aceites vegetales</span> en Mexico
-                            </h1>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
 </body>
 </html>
