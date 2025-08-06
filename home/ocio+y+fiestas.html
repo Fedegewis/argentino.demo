@@ -3,12 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Ocio y fiestas</title>
-        <link rel="preconnect" href="https://i.argentino.com.ar"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="canonical" href="https://www.argentino.com.ar"/>
-        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos.css?313">
-        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos2.css?313">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://i.argentino.com.ar/config_argentino_www/favicon.png">
+        <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+        <link type="text/css" rel="stylesheet" href="../css/estilos2.css">
+        <link rel="icon" type="image/png" href="../logo.country.png">
         <style>
             .tope2 {
                 width: 100%;
@@ -329,20 +327,15 @@
             <div class="tope2_contenedor">
                 <div class="tope2_logo">
                     <a href="/argentino.demo/">
-                        <img srcset="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 132w, https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 160w" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2" alt="Argentino.com.ar - avisos clasificados de Argentina" width="132" height="33">
+                        <img srcset="../logo.svg.png" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="../logo.svg.png" alt="Logo mexicano" width="132" height="33">
                     </a>
                 </div>
                 <div id="tope2_buscar">
-                    <form method="post" action="buscar.asp" class="formulario">
-                        <input name="u" type="hidden" value="argentina">
-                        <input name="d" type="hidden" value="">
-                        <input name="b" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
+                   <form method="get" action="resultadosCategorias.html" class="formulario">
+                        <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
                         <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
-                            <svg alt="search">
-                                <use xlink:href="imagenes/sprite.svg?3#search"></use>
-                            </svg>
-                        </a>
-                    </form>
+                    </a>
+                    </form> 
                 </div>
                 <div class="tope2_micuenta">
                     <a href="private/login?utm_source=landing&utm_medium=none&utm_campaign=login" rel="nofollow" title="Mi cuenta">
@@ -387,225 +380,142 @@
                 <h1>Ocio y fiestas</h1>
                 <ul>
                     <li class="foto">
-                        <a href="argentina/ballet" title="Ballet en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/ballet.jpg" width="100" height="75" alt="Ballet en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/ballet" title="Ballet en Argentina">
+                            <img src="../imagenes/ballet.jpg" width="100" height="75" alt="Ballet en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/ballet" title="Ballet en Argentina">Ballet</a>
+                        <a href="/argentino.demo/mexico/ballet" title="Ballet en Argentina">Ballet</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/billares" title="Billares en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/billares.jpg" width="100" height="75" alt="Billares en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/billares" title="Billares en Argentina">
+                            <img src="../imagenes/billares.jpg" width="100" height="75" alt="Billares en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/billares" title="Billares en Argentina">Billares</a>
+                        <a href="/argentino.demo/mexico/billares" title="Billares en Argentina">Billares</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/carnavales" title="Carnavales en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/salones-para-fiestas.jpg" width="100" height="75" alt="Carnavales en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/carnavales" title="Carnavales en Argentina">
+                            <img src="../imagenes/salones-para-fiestas.jpg" width="100" height="75" alt="Carnavales en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/carnavales" title="Carnavales en Argentina">Carnavales</a>
+                        <a href="/argentino.demo/mexico/carnavales" title="Carnavales en Argentina">Carnavales</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/cines" title="Cines en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/cine.jpg" width="100" height="75" alt="Cines en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/cines" title="Cines en Argentina">
+                            <img src="../imagenes/cine.jpg" width="100" height="75" alt="Cines en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/cines" title="Cines en Argentina">Cines</a>
+                        <a href="/argentino.demo/mexico/cines" title="Cines en Argentina">Cines</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/circos" title="Circos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/circos.jpg" width="100" height="75" alt="Circos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/circos" title="Circos en Argentina">
+                            <img src="../imagenes/circos.jpg" width="100" height="75" alt="Circos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/circos" title="Circos en Argentina">Circos</a>
+                        <a href="/argentino.demo/mexico/circos" title="Circos en Argentina">Circos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/conciertos" title="Conciertos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/vida-nocturna.jpg" width="100" height="75" alt="Conciertos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/conciertos" title="Conciertos en Argentina">
+                            <img src="../imagenes/vida-nocturna.jpg" width="100" height="75" alt="Conciertos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/conciertos" title="Conciertos en Argentina">Conciertos</a>
+                        <a href="/argentino.demo/mexico/conciertos" title="Conciertos en Argentina">Conciertos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/comics" title="Cómics en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/comics.jpg" width="100" height="75" alt="Cómics en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/comics" title="Cómics en Argentina">
+                            <img src="../imagenes/comics.jpg" width="100" height="75" alt="Cómics en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/comics" title="Cómics en Argentina">Cómics</a>
+                        <a href="/argentino.demo/mexico/comics" title="Cómics en Argentina">Cómics</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/desfiles+de+modas" title="Desfiles de modas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/modas-femenina.jpg" width="100" height="75" alt="Desfiles de modas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/desfiles+de+modas" title="Desfiles de modas en Argentina">
+                            <img src="../imagenes/modas-femenina.jpg" width="100" height="75" alt="Desfiles de modas en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/desfiles+de+modas" title="Desfiles de modas en Argentina">Desfiles de modas</a>
+                        <a href="/argentino.demo/mexico/desfiles+de+modas" title="Desfiles de modas en Argentina">Desfiles de modas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/discotecas" title="Discotecas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/fiestas.jpg" width="100" height="75" alt="Discotecas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/discotecas" title="Discotecas en Argentina">
+                            <img src="../imagenes/fiestas.jpg" width="100" height="75" alt="Discotecas en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/discotecas" title="Discotecas en Argentina">Discotecas</a>
+                        <a href="/argentino.demo/mexico/discotecas" title="Discotecas en Argentina">Discotecas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/eventos" title="Eventos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/fiestas.jpg" width="100" height="75" alt="Eventos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/eventos" title="Eventos en Argentina">
+                            <img src="../imagenes/fiestas.jpg" width="100" height="75" alt="Eventos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/eventos" title="Eventos en Argentina">Eventos</a>
+                        <a href="/argentino.demo/mexico/eventos" title="Eventos en Argentina">Eventos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/eventos+deportivos" title="Eventos deportivos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/clubs-deportivos.jpg" width="100" height="75" alt="Eventos deportivos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/eventos+deportivos" title="Eventos deportivos en Argentina">
+                            <img src="../imagenes/clubs-deportivos.jpg" width="100" height="75" alt="Eventos deportivos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/eventos+deportivos" title="Eventos deportivos en Argentina">Eventos deportivos</a>
+                        <a href="/argentino.demo/mexico/eventos+deportivos" title="Eventos deportivos en Argentina">Eventos deportivos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/festivales" title="Festivales en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/planificacion-de-fiestas.jpg" width="100" height="75" alt="Festivales en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/festivales" title="Festivales en Argentina">
+                            <img src="../imagenes/planificacion-de-fiestas.jpg" width="100" height="75" alt="Festivales en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/festivales" title="Festivales en Argentina">Festivales</a>
+                        <a href="/argentino.demo/mexico/festivales" title="Festivales en Argentina">Festivales</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/fiestas" title="Fiestas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/fiestas.jpg" width="100" height="75" alt="Fiestas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/fiestas" title="Fiestas en Argentina">
+                            <img src="../imagenes/fiestas.jpg" width="100" height="75" alt="Fiestas en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/fiestas" title="Fiestas en Argentina">Fiestas</a>
+                        <a href="/argentino.demo/mexico/fiestas" title="Fiestas en Argentina">Fiestas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/galerias+de+arte" title="Galerías de arte en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/talleres-de-arte.jpg" width="100" height="75" alt="Galerías de arte en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/galerias+de+arte" title="Galerías de arte en Argentina">
+                            <img src="../imagenes/talleres-de-arte.jpg" width="100" height="75" alt="Galerías de arte en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/galerias+de+arte" title="Galerías de arte en Argentina">Galerías de arte</a>
+                        <a href="/argentino.demo/mexico/galerias+de+arte" title="Galerías de arte en Argentina">Galerías de arte</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/juegos+de+azar" title="Juegos de azar en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/juegos_de_azar.jpg" width="100" height="75" alt="Juegos de azar en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/juegos+de+azar" title="Juegos de azar en Argentina">
+                            <img src="../imagenes/juegos_de_azar.jpg" width="100" height="75" alt="Juegos de azar en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/juegos+de+azar" title="Juegos de azar en Argentina">Juegos de azar</a>
+                        <a href="/argentino.demo/mexico/juegos+de+azar" title="Juegos de azar en Argentina">Juegos de azar</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/karaoke" title="Karaoke en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/dj.jpg" width="100" height="75" alt="Karaoke en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/karaoke" title="Karaoke en Argentina">
+                            <img src="../imagenes/dj.jpg" width="100" height="75" alt="Karaoke en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/karaoke" title="Karaoke en Argentina">Karaoke</a>
+                        <a href="/argentino.demo/mexico/karaoke" title="Karaoke en Argentina">Karaoke</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/museos" title="Museos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/arte-y-entretenimiento.jpg" width="100" height="75" alt="Museos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/museos" title="Museos en Argentina">
+                            <img src="../imagenes/arte-y-entretenimiento.jpg" width="100" height="75" alt="Museos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/museos" title="Museos en Argentina">Museos</a>
+                        <a href="/argentino.demo/mexico/museos" title="Museos en Argentina">Museos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/parques+tematicos" title="Parques temáticos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/parques-tematicos.jpg" width="100" height="75" alt="Parques temáticos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/parques+tematicos" title="Parques temáticos en Argentina">
+                            <img src="../imagenes/parques-tematicos.jpg" width="100" height="75" alt="Parques temáticos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/parques+tematicos" title="Parques temáticos en Argentina">Parques temáticos</a>
+                        <a href="/argentino.demo/mexico/parques+tematicos" title="Parques temáticos en Argentina">Parques temáticos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/recitales" title="Recitales en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/entretenimiento-para-eventos.jpg" width="100" height="75" alt="Recitales en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/recitales" title="Recitales en Argentina">
+                            <img src="../imagenes/entretenimiento-para-eventos.jpg" width="100" height="75" alt="Recitales en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/recitales" title="Recitales en Argentina">Recitales</a>
+                        <a href="/argentino.demo/mexico/recitales" title="Recitales en Argentina">Recitales</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/teatros" title="Teatros en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/teatros.jpg" width="100" height="75" alt="Teatros en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/teatros" title="Teatros en Argentina">
+                            <img src="../imagenes/teatros.jpg" width="100" height="75" alt="Teatros en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/teatros" title="Teatros en Argentina">Teatros</a>
+                        <a href="/argentino.demo/mexico/teatros" title="Teatros en Argentina">Teatros</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/videojuegos" title="Videojuegos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/videojuegos.jpg" width="100" height="75" alt="Videojuegos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/videojuegos" title="Videojuegos en Argentina">
+                            <img src="../imagenes/videojuegos.jpg" width="100" height="75" alt="Videojuegos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/videojuegos" title="Videojuegos en Argentina">Videojuegos</a>
+                        <a href="/argentino.demo/mexico/videojuegos" title="Videojuegos en Argentina">Videojuegos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/zoologicos" title="Zoológicos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/zoologicos.jpg" width="100" height="75" alt="Zoológicos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/zoologicos" title="Zoológicos en Argentina">
+                            <img src="../imagenes/zoologicos.jpg" width="100" height="75" alt="Zoológicos en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/zoologicos" title="Zoológicos en Argentina">Zoológicos</a>
+                        <a href="/argentino.demo/mexico/zoologicos" title="Zoológicos en Argentina">Zoológicos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/opera" title="Ópera en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/opera.jpg" width="100" height="75" alt="Ópera en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/opera" title="Ópera en Argentina">
+                            <img src="../imagenes/opera.jpg" width="100" height="75" alt="Ópera en Argentina" loading="lazy">
                         </a>
-                        <a href="argentina/opera" title="Ópera en Argentina">Ópera</a>
-                    </li>
-                </ul>
-                <ul style="margin-top:20px;">
-                    <li>
-                        <a href="argentina/actividades+turisticas" title="Actividades turísticas en Argentina">Actividades turísticas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/animaciones+infantiles" title="Animaciones infantiles en Argentina">Animaciones infantiles</a>
-                    </li>
-                    <li>
-                        <a href="argentina/artes+visuales" title="Artes visuales en Argentina">Artes visuales</a>
-                    </li>
-                    <li>
-                        <a href="argentina/barras+para+fiestas" title="Barras para fiestas en Argentina">Barras para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/bautizos" title="Bautizos en Argentina">Bautizos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/camas+elasticas+para+fiestas" title="Camas elásticas para fiestas en Argentina">Camas elásticas para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/catering+para+fiestas+y+eventos" title="Catering para fiestas y eventos en Argentina">Catering para fiestas y eventos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/centros+comunitarios" title="Centros comunitarios en Argentina">Centros comunitarios</a>
-                    </li>
-                    <li>
-                        <a href="argentina/centros+culturales" title="Centros culturales en Argentina">Centros culturales</a>
-                    </li>
-                    <li>
-                        <a href="argentina/comida+para+fiestas" title="Comida para fiestas en Argentina">Comida para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/cumpleanos+infantiles" title="Cumpleaños infantiles en Argentina">Cumpleaños infantiles</a>
-                    </li>
-                    <li>
-                        <a href="argentina/decoraciones+para+fiestas" title="Decoraciones para fiestas en Argentina">Decoraciones para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/disco+pub" title="Disco pub en Argentina">Disco pub</a>
-                    </li>
-                    <li>
-                        <a href="argentina/dj+para+fiestas" title="Dj para fiestas en Argentina">Dj para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/esoterismo" title="Esoterismo en Argentina">Esoterismo</a>
-                    </li>
-                    <li>
-                        <a href="argentina/fiestas+infantiles" title="Fiestas infantiles en Argentina">Fiestas infantiles</a>
-                    </li>
-                    <li>
-                        <a href="argentina/fiestas+para+ninos" title="Fiestas para niños en Argentina">Fiestas para niños</a>
-                    </li>
-                    <li>
-                        <a href="argentina/hobbies" title="Hobbies en Argentina">Hobbies</a>
-                    </li>
-                    <li>
-                        <a href="argentina/juegos+de+mesa" title="Juegos de mesa en Argentina">Juegos de mesa</a>
-                    </li>
-                    <li>
-                        <a href="argentina/manualidades" title="Manualidades en Argentina">Manualidades</a>
-                    </li>
-                    <li>
-                        <a href="argentina/personal+para+fiestas" title="Personal para fiestas en Argentina">Personal para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/pinturas+al+oleo" title="Pinturas al oleo en Argentina">Pinturas al oleo</a>
-                    </li>
-                    <li>
-                        <a href="argentina/servicios+de+entretenimiento" title="Servicios de entretenimiento en Argentina">Servicios de entretenimiento</a>
-                    </li>
-                    <li>
-                        <a href="argentina/servicios+de+fiestas" title="Servicios de fiestas en Argentina">Servicios de fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/sonido+para+fiestas" title="Sonido para fiestas en Argentina">Sonido para fiestas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/teatros+de+titeres" title="Teatros de títeres en Argentina">Teatros de títeres</a>
-                    </li>
-                    <li>
-                        <a href="argentina/teatros+municipales" title="Teatros municipales en Argentina">Teatros municipales</a>
+                        <a href="/argentino.demo/mexico/opera" title="Ópera en Argentina">Ópera</a>
                     </li>
                 </ul>
             </div>
@@ -774,6 +684,6 @@
             gtag("js", new Date());
             gtag("config", "G-FL113DLLF8");
         </script>
-        <script src="https://i.argentino.com.ar/js/funciones.js?49" defer></script>
+        <script src="../js/funciones.js" defer></script>
     </body>
 </html>

@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Compras</title>
-        <link rel="preconnect" href="https://i.argentino.com.ar"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="canonical" href="https://www.argentino.com.ar"/>
-        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos.css?313">
-        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos2.css?313">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://i.argentino.com.ar/config_argentino_www/favicon.png">
+        <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+        <link type="text/css" rel="stylesheet" href="../css/estilos2.css">
+        <link rel="icon" type="image/png" href="../logo.country.png">
+
         <style>
             .tope2 {
                 width: 100%;
@@ -329,19 +328,14 @@
             <div class="tope2_contenedor">
                 <div class="tope2_logo">
                     <a href="/argentino.demo/">
-                        <img srcset="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 132w, https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 160w" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2" alt="Argentino.com.ar - avisos clasificados de Argentina" width="132" height="33">
+                        <img srcset="../logo.svg.png" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="../logo.svg.png" alt="Logo mexicano" width="132" height="33">
                     </a>
                 </div>
                 <div id="tope2_buscar">
-                    <form method="post" action="buscar.asp" class="formulario">
-                        <input name="u" type="hidden" value="argentina">
-                        <input name="d" type="hidden" value="">
-                        <input name="b" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
+                   <form method="get" action="resultadosCategorias.html" class="formulario">
+                        <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
                         <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
-                            <svg alt="search">
-                                <use xlink:href="imagenes/sprite.svg?3#search"></use>
-                            </svg>
-                        </a>
+                    </a>
                     </form>
                 </div>
                 <div class="tope2_micuenta">
@@ -387,435 +381,338 @@
                 <h1>Compras</h1>
                 <ul>
                     <li class="foto">
-                        <a href="argentina/anticuarios" title="Anticuarios en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/anticuarios.jpg" width="100" height="75" alt="Anticuarios en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/anticuarios" title="Anticuarios en Mexico">
+                            <img src="../imagenes/anticuarios.jpg" width="100" height="75" alt="Anticuarios en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/anticuarios" title="Anticuarios en Argentina">Anticuarios</a>
+                        <a href="/argentino.demo/mexico/anticuarios" title="Anticuarios en Mexico">Anticuarios</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/articulos+de+limpieza" title="Artículos de limpieza en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/articulos-para-limpieza.jpg" width="100" height="75" alt="Artículos de limpieza en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/articulos+de+limpieza" title="Artículos de limpieza en Mexico">
+                            <img src="../imagenes/articulos-para-limpieza.jpg" width="100" height="75" alt="Artículos de limpieza en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/articulos+de+limpieza" title="Artículos de limpieza en Argentina">Artículos de limpieza</a>
+                        <a href="/argentino.demo/mexico/articulos+de+limpieza" title="Artículos de limpieza en Mexico">Artículos de limpieza</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/corseterias" title="Corseterías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/lencerias.jpg" width="100" height="75" alt="Corseterías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/corseterias" title="Corseterías en Mexico">
+                            <img src="../imagenes/lencerias.jpg" width="100" height="75" alt="Corseterías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/corseterias" title="Corseterías en Argentina">Corseterías</a>
+                        <a href="/argentino.demo/mexico/corseterias" title="Corseterías en Mexico">Corseterías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/cristalerias" title="Cristalerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/cristalerias.jpg" width="100" height="75" alt="Cristalerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/cristalerias" title="Cristalerías en Mexico">
+                            <img src="../imagenes/cristalerias.jpg" width="100" height="75" alt="Cristalerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/cristalerias" title="Cristalerías en Argentina">Cristalerías</a>
+                        <a href="/argentino.demo/mexico/cristalerias" title="Cristalerías en Mexico">Cristalerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/droguerias" title="Droguerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/farmacias.jpg" width="100" height="75" alt="Droguerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/droguerias" title="Droguerías en Mexico">
+                            <img src="../imagenes/farmacias.jpg" width="100" height="75" alt="Droguerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/droguerias" title="Droguerías en Argentina">Droguerías</a>
+                        <a href="/argentino.demo/mexico/droguerias" title="Droguerías en Mexico">Droguerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/electrodomesticos" title="Electrodomésticos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/electrodomesticos.jpg" width="100" height="75" alt="Electrodomésticos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/electrodomesticos" title="Electrodomésticos en Mexico">
+                            <img src="../imagenes/electrodomesticos.jpg" width="100" height="75" alt="Electrodomésticos en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/electrodomesticos" title="Electrodomésticos en Argentina">Electrodomésticos</a>
+                        <a href="/argentino.demo/mexico/electrodomesticos" title="Electrodomésticos en Mexico">Electrodomésticos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/florerias" title="Florerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/floristerias.jpg" width="100" height="75" alt="Florerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/florerias" title="Florerías en Mexico">
+                            <img src="../imagenes/floristerias.jpg" width="100" height="75" alt="Florerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/florerias" title="Florerías en Argentina">Florerías</a>
+                        <a href="/argentino.demo/mexico/florerias" title="Florerías en Mexico">Florerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/instrumentos+musicales" title="Instrumentos musicales en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/clases-de-piano.jpg" width="100" height="75" alt="Instrumentos musicales en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/instrumentos+musicales" title="Instrumentos musicales en Mexico">
+                            <img src="../imagenes/clases-de-piano.jpg" width="100" height="75" alt="Instrumentos musicales en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/instrumentos+musicales" title="Instrumentos musicales en Argentina">Instrumentos musicales</a>
+                        <a href="/argentino.demo/mexico/instrumentos+musicales" title="Instrumentos musicales en Mexico">Instrumentos musicales</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/joyerias" title="Joyerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/joyerias.jpg" width="100" height="75" alt="Joyerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/joyerias" title="Joyerías en Mexico">
+                            <img src="../imagenes/joyerias.jpg" width="100" height="75" alt="Joyerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/joyerias" title="Joyerías en Argentina">Joyerías</a>
+                        <a href="/argentino.demo/mexico/joyerias" title="Joyerías en Mexico">Joyerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/jugueterias" title="Jugueterías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/jugueterias.jpg" width="100" height="75" alt="Jugueterías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/jugueterias" title="Jugueterías en Mexico">
+                            <img src="../imagenes/jugueterias.jpg" width="100" height="75" alt="Jugueterías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/jugueterias" title="Jugueterías en Argentina">Jugueterías</a>
+                        <a href="/argentino.demo/mexico/jugueterias" title="Jugueterías en Mexico">Jugueterías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/librerias" title="Librerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/librerias.jpg" width="100" height="75" alt="Librerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/librerias" title="Librerías en Mexico">
+                            <img src="../imagenes/librerias.jpg" width="100" height="75" alt="Librerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/librerias" title="Librerías en Argentina">Librerías</a>
+                        <a href="/argentino.demo/mexico/librerias" title="Librerías en Mexico">Librerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/marroquinerias" title="Marroquinerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/marroquineria.jpg" width="100" height="75" alt="Marroquinerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/marroquinerias" title="Marroquinerías en Mexico">
+                            <img src="../imagenes/marroquineria.jpg" width="100" height="75" alt="Marroquinerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/marroquinerias" title="Marroquinerías en Argentina">Marroquinerías</a>
+                        <a href="/argentino.demo/mexico/marroquinerias" title="Marroquinerías en Mexico">Marroquinerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/mayoristas" title="Mayoristas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/mayoristas.jpg" width="100" height="75" alt="Mayoristas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/mayoristas" title="Mayoristas en Mexico">
+                            <img src="../imagenes/mayoristas.jpg" width="100" height="75" alt="Mayoristas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/mayoristas" title="Mayoristas en Argentina">Mayoristas</a>
+                        <a href="/argentino.demo/mexico/mayoristas" title="Mayoristas en Mexico">Mayoristas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/mercerias" title="Mercerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/mercerias.jpg" width="100" height="75" alt="Mercerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/mercerias" title="Mercerías en Mexico">
+                            <img src="../imagenes/mercerias.jpg" width="100" height="75" alt="Mercerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/mercerias" title="Mercerías en Argentina">Mercerías</a>
+                        <a href="/argentino.demo/mexico/mercerias" title="Mercerías en Mexico">Mercerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/papelerias" title="Papelerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/papelerias.jpg" width="100" height="75" alt="Papelerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/papelerias" title="Papelerías en Mexico">
+                            <img src="../imagenes/papelerias.jpg" width="100" height="75" alt="Papelerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/papelerias" title="Papelerías en Argentina">Papelerías</a>
+                        <a href="/argentino.demo/mexico/papelerias" title="Papelerías en Mexico">Papelerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/puestos+de+diarios" title="Puestos de diarios en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/puesto_de_diarios.jpg" width="100" height="75" alt="Puestos de diarios en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/puestos+de+diarios" title="Puestos de diarios en Mexico">
+                            <img src="../imagenes/puesto_de_diarios.jpg" width="100" height="75" alt="Puestos de diarios en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/puestos+de+diarios" title="Puestos de diarios en Argentina">Puestos de diarios</a>
+                        <a href="/argentino.demo/mexico/puestos+de+diarios" title="Puestos de diarios en Mexico">Puestos de diarios</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/relojerias" title="Relojerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/relojerias.jpg" width="100" height="75" alt="Relojerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/relojerias" title="Relojerías en Mexico">
+                            <img src="../imagenes/relojerias.jpg" width="100" height="75" alt="Relojerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/relojerias" title="Relojerías en Argentina">Relojerías</a>
+                        <a href="/argentino.demo/mexico/relojerias" title="Relojerías en Mexico">Relojerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/santerias" title="Santerías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/santerias.jpg" width="100" height="75" alt="Santerías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/santerias" title="Santerías en Mexico">
+                            <img src="../imagenes/santerias.jpg" width="100" height="75" alt="Santerías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/santerias" title="Santerías en Argentina">Santerías</a>
+                        <a href="/argentino.demo/mexico/santerias" title="Santerías en Mexico">Santerías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/subastas" title="Subastas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/subastas.jpg" width="100" height="75" alt="Subastas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/subastas" title="Subastas en Mexico">
+                            <img src="../imagenes/subastas.jpg" width="100" height="75" alt="Subastas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/subastas" title="Subastas en Argentina">Subastas</a>
+                        <a href="/argentino.demo/mexico/subastas" title="Subastas en Mexico">Subastas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/talabarterias" title="Talabarterías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/talabarterias.jpg" width="100" height="75" alt="Talabarterías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/talabarterias" title="Talabarterías en Mexico">
+                            <img src="../imagenes/talabarterias.jpg" width="100" height="75" alt="Talabarterías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/talabarterias" title="Talabarterías en Argentina">Talabarterías</a>
+                        <a href="/argentino.demo/mexico/talabarterias" title="Talabarterías en Mexico">Talabarterías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+deportivas" title="Tiendas deportivas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/academias-deportivas.jpg" width="100" height="75" alt="Tiendas deportivas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+deportivas" title="Tiendas deportivas en Mexico">
+                            <img src="../imagenes/academias-deportivas.jpg" width="100" height="75" alt="Tiendas deportivas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+deportivas" title="Tiendas deportivas en Argentina">Tiendas deportivas</a>
+                        <a href="/argentino.demo/mexico/tiendas+deportivas" title="Tiendas deportivas en Mexico">Tiendas deportivas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+accesorios" title="Tiendas de accesorios en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/tienda_de_accesorios.jpg" width="100" height="75" alt="Tiendas de accesorios en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+accesorios" title="Tiendas de accesorios en Mexico">
+                            <img src="../imagenes/tienda_de_accesorios.jpg" width="100" height="75" alt="Tiendas de accesorios en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+accesorios" title="Tiendas de accesorios en Argentina">Tiendas de accesorios</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+accesorios" title="Tiendas de accesorios en Mexico">Tiendas de accesorios</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+electronica" title="Tiendas de electrónica en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/tiendas_de_electronica.jpg" width="100" height="75" alt="Tiendas de electrónica en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+electronica" title="Tiendas de electrónica en Mexico">
+                            <img src="../imagenes/tiendas_de_electronica.jpg" width="100" height="75" alt="Tiendas de electrónica en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+electronica" title="Tiendas de electrónica en Argentina">Tiendas de electrónica</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+electronica" title="Tiendas de electrónica en Mexico">Tiendas de electrónica</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+fotografia" title="Tiendas de fotografía en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/fotografos.jpg" width="100" height="75" alt="Tiendas de fotografía en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+fotografia" title="Tiendas de fotografía en Mexico">
+                            <img src="../imagenes/fotografos.jpg" width="100" height="75" alt="Tiendas de fotografía en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+fotografia" title="Tiendas de fotografía en Argentina">Tiendas de fotografía</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+fotografia" title="Tiendas de fotografía en Mexico">Tiendas de fotografía</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+videojuegos" title="Tiendas de videojuegos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/videojuegos.jpg" width="100" height="75" alt="Tiendas de videojuegos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+videojuegos" title="Tiendas de videojuegos en Mexico">
+                            <img src="../imagenes/videojuegos.jpg" width="100" height="75" alt="Tiendas de videojuegos en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+videojuegos" title="Tiendas de videojuegos en Argentina">Tiendas de videojuegos</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+videojuegos" title="Tiendas de videojuegos en Mexico">Tiendas de videojuegos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+computacion" title="Tiendas de computación en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/computacion.jpg" width="100" height="75" alt="Tiendas de computación en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+computacion" title="Tiendas de computación en Mexico">
+                            <img src="../imagenes/computacion.jpg" width="100" height="75" alt="Tiendas de computación en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+computacion" title="Tiendas de computación en Argentina">Tiendas de computación</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+computacion" title="Tiendas de computación en Mexico">Tiendas de computación</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+ropa" title="Tiendas de ropa en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/ropa.jpg" width="100" height="75" alt="Tiendas de ropa en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+ropa" title="Tiendas de ropa en Mexico">
+                            <img src="../imagenes/ropa.jpg" width="100" height="75" alt="Tiendas de ropa en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+ropa" title="Tiendas de ropa en Argentina">Tiendas de ropa</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+ropa" title="Tiendas de ropa en Mexico">Tiendas de ropa</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+telas" title="Tiendas de telas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/telas.jpg" width="100" height="75" alt="Tiendas de telas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+telas" title="Tiendas de telas en Mexico">
+                            <img src="../imagenes/telas.jpg" width="100" height="75" alt="Tiendas de telas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+telas" title="Tiendas de telas en Argentina">Tiendas de telas</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+telas" title="Tiendas de telas en Mexico">Tiendas de telas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/tiendas+de+telefonia+movil" title="Tiendas de telefonía móvil en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/tiendas-telefonia-movil.jpg" width="100" height="75" alt="Tiendas de telefonía móvil en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/tiendas+de+telefonia+movil" title="Tiendas de telefonía móvil en Mexico">
+                            <img src="../imagenes/tiendas-telefonia-movil.jpg" width="100" height="75" alt="Tiendas de telefonía móvil en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/tiendas+de+telefonia+movil" title="Tiendas de telefonía móvil en Argentina">Tiendas de telefonía móvil</a>
+                        <a href="/argentino.demo/mexico/tiendas+de+telefonia+movil" title="Tiendas de telefonía móvil en Mexico">Tiendas de telefonía móvil</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/zapaterias" title="Zapaterías en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/zapaterias.jpg" width="100" height="75" alt="Zapaterías en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/zapaterias" title="Zapaterías en Mexico">
+                            <img src="../imagenes/zapaterias.jpg" width="100" height="75" alt="Zapaterías en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/zapaterias" title="Zapaterías en Argentina">Zapaterías</a>
+                        <a href="/argentino.demo/mexico/zapaterias" title="Zapaterías en Mexico">Zapaterías</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/opticas" title="Ópticas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/opticas.jpg" width="100" height="75" alt="Ópticas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/opticas" title="Ópticas en Mexico">
+                            <img src="../imagenes/opticas.jpg" width="100" height="75" alt="Ópticas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/opticas" title="Ópticas en Argentina">Ópticas</a>
+                        <a href="/argentino.demo/mexico/opticas" title="Ópticas en Mexico">Ópticas</a>
                     </li>
                 </ul>
-                <ul style="margin-top:20px;">
-                    <li>
-                        <a href="argentina/almacenes+mayoristas" title="Almacenes mayoristas en Argentina">Almacenes mayoristas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/artesanias+y+accesorios" title="Artesanías y accesorios en Argentina">Artesanías y accesorios</a>
-                    </li>
-                    <li>
-                        <a href="argentina/articulos+electrodomesticos" title="Artículos electrodomésticos en Argentina">Artículos electrodomésticos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/bebes" title="Bebés en Argentina">Bebés</a>
-                    </li>
-                    <li>
-                        <a href="argentina/bisuterias" title="Bisuterías en Argentina">Bisuterías</a>
-                    </li>
-                    <li>
-                        <a href="argentina/cigarrerias" title="Cigarrerías en Argentina">Cigarrerías</a>
-                    </li>
-                    <li>
-                        <a href="argentina/componentes+de+electronica" title="Componentes de electronica en Argentina">Componentes de electronica</a>
-                    </li>
-                    <li>
-                        <a href="argentina/equipo+de+radio" title="Equipo de radio en Argentina">Equipo de radio</a>
-                    </li>
-                    <li>
-                        <a href="argentina/floristas" title="Floristas en Argentina">Floristas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/mayoristas+textiles" title="Mayoristas textiles en Argentina">Mayoristas textiles</a>
-                    </li>
-                    <li>
-                        <a href="argentina/perfumes+para+ropa" title="Perfumes para ropa en Argentina">Perfumes para ropa</a>
-                    </li>
-                    <li>
-                        <a href="argentina/productos+nacionales" title="Productos nacionales en Argentina">Productos nacionales</a>
-                    </li>
-                    <li>
-                        <a href="argentina/ropa+para+empresas" title="Ropa para empresas en Argentina">Ropa para empresas</a>
-                    </li>
-                    <li>
-                        <a href="argentina/sistemas+de+sonido" title="Sistemas de sonido en Argentina">Sistemas de sonido</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tienda+de+artesania" title="Tienda de artesanía en Argentina">Tienda de artesanía</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tienda+de+bolsos" title="Tienda de bolsos en Argentina">Tienda de bolsos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tienda+de+regaleria" title="Tienda de regalería en Argentina">Tienda de regalería</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tienda+de+regalos" title="Tienda de regalos en Argentina">Tienda de regalos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+arte" title="Tiendas de arte en Argentina">Tiendas de arte</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+belleza" title="Tiendas de belleza en Argentina">Tiendas de belleza</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+deportes" title="Tiendas de deportes en Argentina">Tiendas de deportes</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+joyeria" title="Tiendas de joyería en Argentina">Tiendas de joyería</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+juguetes" title="Tiendas de juguetes en Argentina">Tiendas de juguetes</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+libros" title="Tiendas de libros en Argentina">Tiendas de libros</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+muebles" title="Tiendas de muebles en Argentina">Tiendas de muebles</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+de+novias" title="Tiendas de novias en Argentina">Tiendas de novias</a>
-                    </li>
-                    <li>
-                        <a href="argentina/tiendas+online" title="Tiendas online en Argentina">Tiendas online</a>
-                    </li>
-                    <li>
-                        <a href="argentina/uniformes" title="Uniformes en Argentina">Uniformes</a>
-                    </li>
-                    <li>
-                        <a href="argentina/venta+de+articulos+usados" title="Venta de artículos usados en Argentina">Venta de artículos usados</a>
-                    </li>
-                    <li>
-                        <a href="argentina/venta+de+bijouterie" title="Venta de bijouterie en Argentina">Venta de bijouterie</a>
-                    </li>
-                    <li>
-                        <a href="argentina/venta+de+ropa+usada" title="Venta de ropa usada en Argentina">Venta de ropa usada</a>
-                    </li>
-                    <li>
-                        <a href="argentina/videoclubes" title="Videoclubes en Argentina">Videoclubes</a>
-                    </li>
-                </ul>
+                
             </div>
             <div class="iconos_frases_inicio">
                 <div class="item">
-                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Argentina" style="background-color:#9BB9FF;">
+                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Mexico" style="background-color:#9BB9FF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#alimentacion"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Argentina">Alimentación</a>
+                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Mexico">Alimentación</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Argentina" style="background-color:#F8DD3C;">
+                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Mexico" style="background-color:#F8DD3C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#bancos_seguros"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Argentina">Bancos y seguros</a>
+                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Mexico">Bancos y seguros</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Argentina" style="background-color:#23E5D8;">
+                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Mexico" style="background-color:#23E5D8;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#belleza_estetica"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Argentina">Belleza y estética</a>
+                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Mexico">Belleza y estética</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/compras" title="Compras en Argentina" style="background-color:#D2B982;">
+                    <a href="/argentino.demo/home/compras" title="Compras en Mexico" style="background-color:#D2B982;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#compras"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/compras" title="Compras en Argentina">Compras</a>
+                    <a href="/argentino.demo/home/compras" title="Compras en Mexico">Compras</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/construccion" title="Construcción en Argentina" style="background-color:#8DF1EE;">
+                    <a href="/argentino.demo/home/construccion" title="Construcción en Mexico" style="background-color:#8DF1EE;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#construccion"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/construccion" title="Construcción en Argentina">Construcción</a>
+                    <a href="/argentino.demo/home/construccion" title="Construcción en Mexico">Construcción</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/deportes" title="Deportes en Argentina" style="background-color:#CDDCFF;">
+                    <a href="/argentino.demo/home/deportes" title="Deportes en Mexico" style="background-color:#CDDCFF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#deportes"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/deportes" title="Deportes en Argentina">Deportes</a>
+                    <a href="/argentino.demo/home/deportes" title="Deportes en Mexico">Deportes</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/educacion" title="Educación en Argentina" style="background-color:#FF645C;">
+                    <a href="/argentino.demo/home/educacion" title="Educación en Mexico" style="background-color:#FF645C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#educacion"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/educacion" title="Educación en Argentina">Educación</a>
+                    <a href="/argentino.demo/home/educacion" title="Educación en Mexico">Educación</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Argentina" style="background-color:#FFE894;">
+                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Mexico" style="background-color:#FFE894;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#guia_gastronomica"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Argentina">Guía gastronómica</a>
+                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Mexico">Guía gastronómica</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Argentina" style="background-color:#9BB9FF;">
+                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Mexico" style="background-color:#9BB9FF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#hogar_jardin"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Argentina">Hogar y jardín</a>
+                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Mexico">Hogar y jardín</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Argentina" style="background-color:#F8DD3C;">
+                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Mexico" style="background-color:#F8DD3C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#inmobiliarias"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Argentina">Inmobiliarias</a>
+                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Mexico">Inmobiliarias</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Argentina" style="background-color:#23E5D8;">
+                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Mexico" style="background-color:#23E5D8;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#mascotas"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Argentina">Mascotas</a>
+                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Mexico">Mascotas</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/motor" title="Motor en Argentina" style="background-color:#D2B982;">
+                    <a href="/argentino.demo/home/motor" title="Motor en Mexico" style="background-color:#D2B982;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#motor"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/motor" title="Motor en Argentina">Motor</a>
+                    <a href="/argentino.demo/home/motor" title="Motor en Mexico">Motor</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Argentina" style="background-color:#8DF1EE;">
+                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Mexico" style="background-color:#8DF1EE;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#profesionales"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Argentina">Profesionales</a>
+                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Mexico">Profesionales</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Argentina" style="background-color:#CDDCFF;">
+                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Mexico" style="background-color:#CDDCFF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#servicios_publicos"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Argentina">Servicios públicos</a>
+                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Mexico">Servicios públicos</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Argentina" style="background-color:#FF645C;">
+                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Mexico" style="background-color:#FF645C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#ocio_fiestas"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Argentina">Ocio y fiestas</a>
+                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Mexico">Ocio y fiestas</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/salud" title="Salud en Argentina" style="background-color:#FFE894;">
+                    <a href="/argentino.demo/home/salud" title="Salud en Mexico" style="background-color:#FFE894;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#salud"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/salud" title="Salud en Argentina">Salud</a>
+                    <a href="/argentino.demo/home/salud" title="Salud en Mexico">Salud</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/transportes" title="Transportes en Argentina" style="background-color:#9BB9FF;">
+                    <a href="/argentino.demo/home/transportes" title="Transportes en Mexico" style="background-color:#9BB9FF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#transportes"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/transportes" title="Transportes en Argentina">Transportes</a>
+                    <a href="/argentino.demo/home/transportes" title="Transportes en Mexico">Transportes</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Argentina" style="background-color:#F8DD3C;">
+                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Mexico" style="background-color:#F8DD3C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#viajes_hoteles"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Argentina">Viajes y hoteles</a>
+                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Mexico">Viajes y hoteles</a>
                 </div>
             </div>
         </div>
@@ -837,6 +734,6 @@
             gtag("js", new Date());
             gtag("config", "G-FL113DLLF8");
         </script>
-        <script src="https://i.argentino.com.ar/js/funciones.js?49" defer></script>
+        <script src="../js/funciones.js" defer></script>
     </body>
 </html>

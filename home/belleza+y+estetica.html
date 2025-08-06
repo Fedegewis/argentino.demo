@@ -333,15 +333,10 @@
                     </a>
                 </div>
                 <div id="tope2_buscar">
-                    <form method="post" action="buscar.asp" class="formulario">
-                        <input name="u" type="hidden" value="mexico">
-                        <input name="d" type="hidden" value="">
-                        <input name="b" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
+                    <form method="get" action="resultadosCategorias.html" class="formulario">
+                        <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
                         <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
-                            <svg alt="search">
-                                <use xlink:href="imagenes/sprite.svg?3#search"></use>
-                            </svg>
-                        </a>
+                    </a>
                     </form>
                 </div>
                 <div class="tope2_micuenta">
@@ -388,55 +383,55 @@
                 <ul>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/articulos+de+peluqueria" title="Artículos de peluquería en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/salon-de-peluqueria.jpg" width="100" height="75" alt="Artículos de peluquería en Mexico" loading="lazy">
+                            <img src="../imagenes/salon-de-peluqueria.jpg" width="100" height="75" alt="Artículos de peluquería en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/articulos+de+peluqueria" title="Artículos de peluquería en Mexico">Artículos de peluquería</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/barberias" title="Barberías en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/cortes-de-cabello.jpg" width="100" height="75" alt="Barberías en Mexico" loading="lazy">
+                            <img src="../imagenes/cortes-de-cabello.jpg" width="100" height="75" alt="Barberías en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/barberias" title="Barberías en Mexico">Barberías</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/estetica+corporal" title="Estética corporal en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/centros-esteticos.jpg" width="100" height="75" alt="Estética corporal en Mexico" loading="lazy">
+                            <img src="../imagenes/centros-esteticos.jpg" width="100" height="75" alt="Estética corporal en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/estetica+corporal" title="Estética corporal en Mexico">Estética corporal</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/higiene+personal" title="Higiene personal en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/higiene-personal.jpg" width="100" height="75" alt="Higiene personal en Mexico" loading="lazy">
+                            <img src="../imagenes/higiene-personal.jpg" width="100" height="75" alt="Higiene personal en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/higiene+personal" title="Higiene personal en Mexico">Higiene personal</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/maquillajes" title="Maquillajes en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/maquillajes.jpg" width="100" height="75" alt="Maquillajes en Mexico" loading="lazy">
+                            <img src="../imagenes/maquillajes.jpg" width="100" height="75" alt="Maquillajes en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/maquillajes" title="Maquillajes en Mexico">Maquillajes</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/peluquerias" title="Peluquerías en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/peluquerias.jpg" width="100" height="75" alt="Peluquerías en Mexico" loading="lazy">
+                            <img src="../imagenes/peluquerias.jpg" width="100" height="75" alt="Peluquerías en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/peluquerias" title="Peluquerías en Mexico">Peluquerías</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/piercings" title="Piercings en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/piercings.jpg" width="100" height="75" alt="Piercings en Mexico" loading="lazy">
+                            <img src="../imagenes/piercings.jpg" width="100" height="75" alt="Piercings en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/piercings" title="Piercings en Mexico">Piercings</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/tatuajes" title="Tatuajes en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/tatuajes.jpg" width="100" height="75" alt="Tatuajes en Mexico" loading="lazy">
+                            <img src="../imagenes/tatuajes.jpg" width="100" height="75" alt="Tatuajes en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/tatuajes" title="Tatuajes en Mexico">Tatuajes</a>
                     </li>
                     <li class="foto">
                         <a href="/argentino.demo/mexico/unas" title="Uñas en Mexico">
-                            <img src="https://i.argentino.com.ar/images/defaults/unias.jpg" width="100" height="75" alt="Uñas en Mexico" loading="lazy">
+                            <img src="../imagenes/unias.jpg" width="100" height="75" alt="Uñas en Mexico" loading="lazy">
                         </a>
                         <a href="/argentino.demo/mexico/unas" title="Uñas en Mexico">Uñas</a>
                     </li>
@@ -608,6 +603,6 @@
             gtag("js", new Date());
             gtag("config", "G-FL113DLLF8");
         </script>
-        <script src="https://i.argentino.com.ar/js/funciones.js?49" defer></script>
+        <script src="../js/funciones.js" defer></script>
     </body>
 </html>

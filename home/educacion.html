@@ -4,12 +4,10 @@
     
         <meta charset="UTF-8">
         <title>Educación</title>
-        <link rel="preconnect" href="https://i.argentino.com.ar"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="canonical" href="https://www.argentino.com.ar"/>
-        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos.css?313">
-        <link type="text/css" rel="stylesheet" href="https://i.argentino.com.ar/css/estilos2.css?313">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://i.argentino.com.ar/config_argentino_www/favicon.png">
+        <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+        <link type="text/css" rel="stylesheet" href="../css/estilos2.css">
+        <link rel="icon" type="image/png" href="../logo.country.png">
         <style>
             .tope2 {
                 width: 100%;
@@ -330,20 +328,14 @@
             <div class="tope2_contenedor">
                 <div class="tope2_logo">
                     <a href="/argentino.demo/">
-                        <img srcset="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 132w, https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2 160w" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="https://i.argentino.com.ar/config_argentino_www/logo.svg?v=2" alt="Argentino.com.ar - avisos clasificados de Argentina" width="132" height="33">
-                    </a>
+                        <img srcset="../logo.svg.png" sizes="(max-width: 767.98px) 132px, (min-width: 768px) 160px, 132px" src="../logo.svg.png" alt="Logo mexicano" width="132" height="33">
                 </div>
                 <div id="tope2_buscar">
-                    <form method="post" action="buscar.asp" class="formulario">
-                        <input name="u" type="hidden" value="argentina">
-                        <input name="d" type="hidden" value="">
-                        <input name="b" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
+                    <form method="get" action="resultadosCategorias.html" class="formulario">
+                        <input name="q" id="buscar_tope" type="text" value="" maxlength="100" placeholder="¿qué buscas?">
                         <a href="javascript:;" onclick="document.querySelector('#tope2_buscar form').submit();">
-                            <svg alt="search">
-                                <use xlink:href="imagenes/sprite.svg?3#search"></use>
-                            </svg>
-                        </a>
-                    </form>
+                    </a>
+                    </form> 
                 </div>
                 <div class="tope2_micuenta">
                     <a href="private/login?utm_source=landing&utm_medium=none&utm_campaign=login" rel="nofollow" title="Mi cuenta">
@@ -388,252 +380,223 @@
                 <h1>Educación</h1>
                 <ul>
                     <li class="foto">
-                        <a href="argentina/bibliotecas" title="Bibliotecas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/bibliotecas.jpg" width="100" height="75" alt="Bibliotecas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/bibliotecas" title="Bibliotecas en Mexico">
+                            <img src="../imagenes/bibliotecas.jpg" width="100" height="75" alt="Bibliotecas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/bibliotecas" title="Bibliotecas en Argentina">Bibliotecas</a>
+                        <a href="/argentino.demo/mexico/bibliotecas" title="Bibliotecas en Mexico">Bibliotecas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/centros+educativos" title="Centros educativos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/educacion.jpg" width="100" height="75" alt="Centros educativos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/centros+educativos" title="Centros educativos en Mexico">
+                            <img src="../imagenes/educacion.jpg" width="100" height="75" alt="Centros educativos en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/centros+educativos" title="Centros educativos en Argentina">Centros educativos</a>
+                        <a href="/argentino.demo/mexico/centros+educativos" title="Centros educativos en Mexico">Centros educativos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/clases+de+idiomas" title="Clases de idiomas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/clases-de-idiomas.jpg" width="100" height="75" alt="Clases de idiomas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/clases+de+idiomas" title="Clases de idiomas en Mexico">
+                            <img src="../imagenes/clases-de-idiomas.jpg" width="100" height="75" alt="Clases de idiomas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/clases+de+idiomas" title="Clases de idiomas en Argentina">Clases de idiomas</a>
+                        <a href="/argentino.demo/mexico/clases+de+idiomas" title="Clases de idiomas en Mexico">Clases de idiomas</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/colegios" title="Colegios en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/educacion.jpg" width="100" height="75" alt="Colegios en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/colegios" title="Colegios en Mexico">
+                            <img src="../imagenes/educacion.jpg" width="100" height="75" alt="Colegios en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/colegios" title="Colegios en Argentina">Colegios</a>
+                        <a href="/argentino.demo/mexico/colegios" title="Colegios en Mexico">Colegios</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/cursos" title="Cursos en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/clases-y-cursos.jpg" width="100" height="75" alt="Cursos en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/cursos" title="Cursos en Mexico">
+                            <img src="../imagenes/clases-y-cursos.jpg" width="100" height="75" alt="Cursos en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/cursos" title="Cursos en Argentina">Cursos</a>
+                        <a href="/argentino.demo/mexico/cursos" title="Cursos en Mexico">Cursos</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/educacion+artistica" title="Educación artística en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/escuelas-de-arte.jpg" width="100" height="75" alt="Educación artística en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/educacion+artistica" title="Educación artística en Mexico">
+                            <img src="../imagenes/escuelas-de-arte.jpg" width="100" height="75" alt="Educación artística en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/educacion+artistica" title="Educación artística en Argentina">Educación artística</a>
+                        <a href="/argentino.demo/mexico/educacion+artistica" title="Educación artística en Mexico">Educación artística</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/educacion+especial" title="Educación especial en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/escuelas-especiales.jpg" width="100" height="75" alt="Educación especial en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/educacion+especial" title="Educación especial en Mexico">
+                            <img src="../imagenes/escuelas-especiales.jpg" width="100" height="75" alt="Educación especial en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/educacion+especial" title="Educación especial en Argentina">Educación especial</a>
+                        <a href="/argentino.demo/mexico/educacion+especial" title="Educación especial en Mexico">Educación especial</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/educacion+primaria" title="Educación primaria en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/educacion.jpg" width="100" height="75" alt="Educación primaria en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/educacion+primaria" title="Educación primaria en Mexico">
+                            <img src="../imagenes/educacion.jpg" width="100" height="75" alt="Educación primaria en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/educacion+primaria" title="Educación primaria en Argentina">Educación primaria</a>
+                        <a href="/argentino.demo/mexico/educacion+primaria" title="Educación primaria en Mexico">Educación primaria</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/educacion+privada" title="Educación privada en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/educacion-privada.jpg" width="100" height="75" alt="Educación privada en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/educacion+privada" title="Educación privada en Mexico">
+                            <img src="../imagenes/educacion-privada.jpg" width="100" height="75" alt="Educación privada en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/educacion+privada" title="Educación privada en Argentina">Educación privada</a>
+                        <a href="/argentino.demo/mexico/educacion+privada" title="Educación privada en Mexico">Educación privada</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/educacion+religiosa" title="Educación religiosa en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/educacion-religiosa.jpg" width="100" height="75" alt="Educación religiosa en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/educacion+religiosa" title="Educación religiosa en Mexico">
+                            <img src="../imagenes/educacion-religiosa.jpg" width="100" height="75" alt="Educación religiosa en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/educacion+religiosa" title="Educación religiosa en Argentina">Educación religiosa</a>
+                        <a href="/argentino.demo/mexico/educacion+religiosa" title="Educación religiosa en Mexico">Educación religiosa</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/educacion+secundaria" title="Educación secundaria en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/educacion-secundaria.jpg" width="100" height="75" alt="Educación secundaria en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/educacion+secundaria" title="Educación secundaria en Mexico">
+                            <img src="../imagenes/educacion-secundaria.jpg" width="100" height="75" alt="Educación secundaria en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/educacion+secundaria" title="Educación secundaria en Argentina">Educación secundaria</a>
+                        <a href="/argentino.demo/mexico/educacion+secundaria" title="Educación secundaria en Mexico">Educación secundaria</a>
                     </li>
                     <li class="foto">
-                        <a href="argentina/escuelas" title="Escuelas en Argentina">
-                            <img src="https://i.argentino.com.ar/images/defaults/escuelas-primarias-publicas.jpg" width="100" height="75" alt="Escuelas en Argentina" loading="lazy">
+                        <a href="/argentino.demo/mexico/escuelas" title="Escuelas en Mexico">
+                            <img src="../imagenes/escuelas-primarias-publicas.jpg" width="100" height="75" alt="Escuelas en Mexico" loading="lazy">
                         </a>
-                        <a href="argentina/escuelas" title="Escuelas en Argentina">Escuelas</a>
-                    </li>
-                </ul>
-                <ul style="margin-top:20px;">
-                    <li>
-                        <a href="argentina/centros+de+capacitacion" title="Centros de capacitación en Argentina">Centros de capacitación</a>
-                    </li>
-                    <li>
-                        <a href="argentina/educacion+inicial" title="Educación inicial en Argentina">Educación inicial</a>
-                    </li>
-                    <li>
-                        <a href="argentina/educacion+para+adultos" title="Educación para adultos en Argentina">Educación para adultos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/educacion+publica" title="Educación pública en Argentina">Educación pública</a>
-                    </li>
-                    <li>
-                        <a href="argentina/educacion+superior" title="Educación superior en Argentina">Educación superior</a>
-                    </li>
-                    <li>
-                        <a href="argentina/institutos" title="Institutos en Argentina">Institutos</a>
-                    </li>
-                    <li>
-                        <a href="argentina/profesores+particulares" title="Profesores particulares en Argentina">Profesores particulares</a>
-                    </li>
-                    <li>
-                        <a href="argentina/servicios+de+formacion" title="Servicios de formación en Argentina">Servicios de formación</a>
-                    </li>
-                    <li>
-                        <a href="argentina/servicios+educativos" title="Servicios educativos en Argentina">Servicios educativos</a>
+                        <a href="/argentino.demo/mexico/escuelas" title="Escuelas en Mexico">Escuelas</a>
                     </li>
                 </ul>
             </div>
             <div class="iconos_frases_inicio">
                 <div class="item">
-                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Argentina" style="background-color:#9BB9FF;">
+                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Mexico" style="background-color:#9BB9FF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#alimentacion"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Argentina">Alimentación</a>
+                    <a href="/argentino.demo/home/alimentacion" title="Alimentación en Mexico">Alimentación</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Argentina" style="background-color:#F8DD3C;">
+                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Mexico" style="background-color:#F8DD3C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#bancos_seguros"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Argentina">Bancos y seguros</a>
+                    <a href="/argentino.demo/home/bancos+y+seguros" title="Bancos y seguros en Mexico">Bancos y seguros</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Argentina" style="background-color:#23E5D8;">
+                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Mexico" style="background-color:#23E5D8;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#belleza_estetica"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Argentina">Belleza y estética</a>
+                    <a href="/argentino.demo/home/belleza+y+estetica" title="Belleza y estética en Mexico">Belleza y estética</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/compras" title="Compras en Argentina" style="background-color:#D2B982;">
+                    <a href="/argentino.demo/home/compras" title="Compras en Mexico" style="background-color:#D2B982;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#compras"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/compras" title="Compras en Argentina">Compras</a>
+                    <a href="/argentino.demo/home/compras" title="Compras en Mexico">Compras</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/construccion" title="Construcción en Argentina" style="background-color:#8DF1EE;">
+                    <a href="/argentino.demo/home/construccion" title="Construcción en Mexico" style="background-color:#8DF1EE;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#construccion"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/construccion" title="Construcción en Argentina">Construcción</a>
+                    <a href="/argentino.demo/home/construccion" title="Construcción en Mexico">Construcción</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/deportes" title="Deportes en Argentina" style="background-color:#CDDCFF;">
+                    <a href="/argentino.demo/home/deportes" title="Deportes en Mexico" style="background-color:#CDDCFF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#deportes"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/deportes" title="Deportes en Argentina">Deportes</a>
+                    <a href="/argentino.demo/home/deportes" title="Deportes en Mexico">Deportes</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/educacion" title="Educación en Argentina" style="background-color:#FF645C;">
+                    <a href="/argentino.demo/home/educacion" title="Educación en Mexico" style="background-color:#FF645C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#educacion"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/educacion" title="Educación en Argentina">Educación</a>
+                    <a href="/argentino.demo/home/educacion" title="Educación en Mexico">Educación</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Argentina" style="background-color:#FFE894;">
+                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Mexico" style="background-color:#FFE894;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#guia_gastronomica"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Argentina">Guía gastronómica</a>
+                    <a href="/argentino.demo/home/guia+gastronomica" title="Guía gastronómica en Mexico">Guía gastronómica</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Argentina" style="background-color:#9BB9FF;">
+                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Mexico" style="background-color:#9BB9FF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#hogar_jardin"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Argentina">Hogar y jardín</a>
+                    <a href="/argentino.demo/home/hogar+y+jardin" title="Hogar y jardín en Mexico">Hogar y jardín</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Argentina" style="background-color:#F8DD3C;">
+                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Mexico" style="background-color:#F8DD3C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#inmobiliarias"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Argentina">Inmobiliarias</a>
+                    <a href="/argentino.demo/home/inmobiliarias" title="Inmobiliarias en Mexico">Inmobiliarias</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Argentina" style="background-color:#23E5D8;">
+                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Mexico" style="background-color:#23E5D8;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#mascotas"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Argentina">Mascotas</a>
+                    <a href="/argentino.demo/home/mascotas" title="Mascotas en Mexico">Mascotas</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/motor" title="Motor en Argentina" style="background-color:#D2B982;">
+                    <a href="/argentino.demo/home/motor" title="Motor en Mexico" style="background-color:#D2B982;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#motor"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/motor" title="Motor en Argentina">Motor</a>
+                    <a href="/argentino.demo/home/motor" title="Motor en Mexico">Motor</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Argentina" style="background-color:#8DF1EE;">
+                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Mexico" style="background-color:#8DF1EE;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#profesionales"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Argentina">Profesionales</a>
+                    <a href="/argentino.demo/home/profesionales" title="Profesionales en Mexico">Profesionales</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Argentina" style="background-color:#CDDCFF;">
+                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Mexico" style="background-color:#CDDCFF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#servicios_publicos"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Argentina">Servicios públicos</a>
+                    <a href="/argentino.demo/home/servicios+publicos" title="Servicios públicos en Mexico">Servicios públicos</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Argentina" style="background-color:#FF645C;">
+                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Mexico" style="background-color:#FF645C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#ocio_fiestas"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Argentina">Ocio y fiestas</a>
+                    <a href="/argentino.demo/home/ocio+y+fiestas" title="Ocio y fiestas en Mexico">Ocio y fiestas</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/salud" title="Salud en Argentina" style="background-color:#FFE894;">
+                    <a href="/argentino.demo/home/salud" title="Salud en Mexico" style="background-color:#FFE894;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#salud"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/salud" title="Salud en Argentina">Salud</a>
+                    <a href="/argentino.demo/home/salud" title="Salud en Mexico">Salud</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/transportes" title="Transportes en Argentina" style="background-color:#9BB9FF;">
+                    <a href="/argentino.demo/home/transportes" title="Transportes en Mexico" style="background-color:#9BB9FF;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#transportes"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/transportes" title="Transportes en Argentina">Transportes</a>
+                    <a href="/argentino.demo/home/transportes" title="Transportes en Mexico">Transportes</a>
                 </div>
                 <div class="item">
-                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Argentina" style="background-color:#F8DD3C;">
+                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Mexico" style="background-color:#F8DD3C;">
                         <svg>
                             <use xlink:href="imagenes/taxonomia.svg?3#viajes_hoteles"></use>
                         </svg>
                     </a>
-                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Argentina">Viajes y hoteles</a>
+                    <a href="/argentino.demo/home/viajes+y+hoteles" title="Viajes y hoteles en Mexico">Viajes y hoteles</a>
                 </div>
             </div>
         </div>
@@ -655,6 +618,6 @@
             gtag("js", new Date());
             gtag("config", "G-FL113DLLF8");
         </script>
-        <script src="https://i.argentino.com.ar/js/funciones.js?49" defer></script>
+        <script src="../js/funciones.js" defer></script>
     </body>
 </html>
