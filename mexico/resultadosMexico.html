@@ -305,8 +305,21 @@
     </script>
 
     <div style="max-width: 999px; margin: 20px auto; padding: 0 10px;">
-        <h1>Resultados de Búsqueda</h1>
+        <h1 id="titulo-busqueda">  Resultados de Búsqueda </h1>
         <div class="gcse-searchresults-only"></div>
     </div>
+        <script>
+    function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+    }
+
+    const query = getQueryParam('q'); // "q" es el parámetro que usa Google Custom Search
+    if (query) {
+        const titulo = document.getElementById('titulo-busqueda');
+        titulo.textContent = `Resultados de Búsqueda para "${decodeURIComponent(query)}"`;
+    }
+    </script>
+
 </body>
 </html>
