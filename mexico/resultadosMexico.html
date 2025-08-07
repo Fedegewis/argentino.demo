@@ -303,24 +303,25 @@
             })
         }();
     </script>
-
     <div style="max-width: 999px; margin: 20px auto; padding: 0 10px;">
-    <h1 id="titulo-busqueda">Resultados de Búsqueda</h1>
-    <div class="gcse-searchresults-only"></div>
-</div>
+        <h1 id="titulo-busqueda">Resultados de Búsqueda</h1>
+        <div class="gcse-searchresults-only"></div>
+    </div>
 
-<script>
-function getQueryParam(name) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(name);
-}
+    <script>
+    function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+    }
 
-const query = getQueryParam('q'); // "q" es el parámetro de búsqueda en Google CSE
-if (query) {
-    const titulo = document.getElementById('titulo-busqueda');
-    titulo.textContent = `Resultados de Búsqueda para "${decodeURIComponent(query)}"`;
-}
-</script>
+    const query = getQueryParam('q');
+
+    if (query && query.trim() !== "") {
+        const titulo = document.getElementById('titulo-busqueda');
+        titulo.textContent = `Resultados de Búsqueda para "${decodeURIComponent(query)}"`;
+    }
+    </script>
+
 
 
 </body>
